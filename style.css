@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(/imagenes-deco/back_principal.jpg);
+    background-image: url(imagenes-deco/back_principal.jpg);
     background-repeat: none;
 }
 .logo{
@@ -49,7 +49,7 @@ main{
     background: lightgray;
     backdrop-filter: blur(3px);
     background-color: rgba(255, 255, 255, 0.05);
-    background-image: url(/imagenes-deco/lupa.png);
+    background-image: url(imagenes-deco/lupa.png);
     background-size: 300px;
     background-position: center 180px;
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ main{
         text-align: center;
         flex-direction: column;
         margin: 0px 0px;
-        background-image: url(/imagenes-deco/back_principal.jpg);
+        background-image: url(imagenes-deco/back_principal.jpg);
     }
     .sec1{
         width: auto;
