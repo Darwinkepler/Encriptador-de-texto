@@ -1,0 +1,183 @@
+*{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    background-image: url(/imagenes-deco/back_principal.jpg);
+    background-repeat: none;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 2%;
+    position: relative; top: 20px; left: 120px;
+}
+
+main{
+    display: flex;
+    margin-left: 80px;
+}
+
+.text-area{
+    resize: none;
+    color: #0a3871;
+    margin: 90px 90px 0px 90px;
+    background-color: lightgray;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0a3871;
+    padding: 15px 20px 0px 20px;
+    width: 1050px; height: 570px;
+}
+
+::placeholder{
+    color: #0a3871; 
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+.mensaje{
+    resize: none;
+    background: lightgray;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    background-image: url(/imagenes-deco/lupa.png);
+    background-size: 300px;
+    background-position: center 180px;
+    background-repeat: no-repeat;
+    filter: opacity(70%);
+    text-underline-position: auto;
+    border-color: #0a3871;
+    border-radius: 24px;
+    border-width: 1px solid darkgray;
+    height: 750px; width: 300px;
+    position: relative;
+    margin: 0px 90px;
+    padding: 10px 10px 0px 10px;
+}
+
+.avisos{
+    background: none;
+    position: relative;bottom: 240px;
+    text-align: center;
+    line-height: 20px;
+}
+.aviso{
+    background: none;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.aviso2{
+    background: none;
+    font-size: 14px;
+}
+
+.botones{
+    display: flex;
+    margin-left: 110px;
+}
+
+.btn-desencriptar:hover,.btn-encriptar:hover,.btnCopiar:hover{
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: scale(1.10);
+}
+
+
+.btn-desencriptar{
+    font-size: 18px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 200px; height: 50px;
+}
+
+.btn-encriptar{
+    font-size: 18px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    width: 200px; height: 50px;
+}
+
+.copiar{
+    display: none;
+    background: none;
+    text-align: center;
+    position: relative;bottom: 230px;
+}
+.btnCopiar{
+    font-size: 25px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 50px;width: 120px; 
+}
+
+.condiciones{
+    color: white;
+    font-size: 15px;
+    position: relative; left: 120px; bottom: 10px;
+}
+
+.piePag{
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #0a3871;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pgn{
+    width: 25px;
+    margin: 5 25px;
+    padding: 5px 5px;
+    border-radius: 50%;  
+}
+
+@media screen and (max-width:980px)
+{
+    main
+    {
+        text-align: center;
+        flex-direction: column;
+        margin: 0px 0px;
+        background-image: url(/imagenes-deco/back_principal.jpg);
+    }
+    .sec1{
+        width: auto;
+        text-align: center;
+    }
+    .sec2{
+        width: auto;
+        position: center;
+    }
+    .text-area{
+        width: 50%;
+    }
+}   
+.botones,.condiciones{
+    justify-content: center;
+}
