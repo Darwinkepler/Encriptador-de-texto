@@ -1,13 +1,15 @@
 *{
-    font-family: 'Inter';
+    font-family: 'cursive';
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    
 }
 
 body{
     background-image: url(imagenes-deco/back_principal.jpg);
     background-repeat: none;
+
 }
 .logo{
     padding-top: 10px;
@@ -18,7 +20,7 @@ body{
 
 main{
     display: flex;
-    margin-left: 80px;
+    height: 825px;
 }
 
 .text-area{
@@ -26,7 +28,7 @@ main{
     color: #0a3871;
     margin: 90px 90px 0px 90px;
     background-color: lightgray;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 14px;
     border-width: 1px;
@@ -83,8 +85,7 @@ main{
 }
 
 .botones{
-    display: flex;
-    margin-left: 110px;
+    margin-left: 140px;
 }
 
 .btn-desencriptar:hover,.btn-encriptar:hover,.btnCopiar:hover{
@@ -100,10 +101,10 @@ main{
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid #0a3871;
     border-radius: 24px;
-    color: #0a3871;
+    color: white;
     cursor: pointer;
     margin-left: 20px;
-    width: 200px; height: 50px;
+    height: 50px;width: 200px; 
 }
 
 .btn-encriptar{
@@ -112,9 +113,9 @@ main{
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid #0a3871;
     border-radius: 24px;
-    color: white;
+    color: #0a3871;
     cursor: pointer;
-    width: 200px; height: 50px;
+    height: 50px;width: 200px;
 }
 
 .copiar{
@@ -146,8 +147,8 @@ main{
     border: 1px solid #0a3871;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+
 }
 
 .pgn{
@@ -163,21 +164,38 @@ main{
     {
         text-align: center;
         flex-direction: column;
-        margin: 0px 0px;
-        background-image: url(imagenes-deco/back_principal.jpg);
+        flex-wrap: wrap;
+        justify-content:  center;
     }
     .sec1{
         width: auto;
         text-align: center;
-    }
-    .sec2{
-        width: auto;
-        position: center;
+        margin-bottom: 30px;
     }
     .text-area{
-        width: 50%;
+        margin: 90px 0px 0px;
+    }
+ 
+    .text-area{
+        width: 90%;
+    }
+    .botones{
+        margin-left: 0px;
+    
+    }
+    .btn-desencriptar{
+        color:#0a3871;
+    }
+
+    .condiciones{
+        color: #0a3871;
+        font-size: 15px;
+        position: relative; left: 0px;
+    }
+
+    .mensaje{
+        height: 587px; width: 900px;
+        margin: 0px 0px;
+        background-position: center 50px;
     }
 }   
-.botones,.condiciones{
-    justify-content: center;
-}
