@@ -166,6 +166,7 @@ main{
         flex-direction: column;
         flex-wrap: wrap;
         justify-content:  center;
+        height: auto;
     }
     .sec1{
         width: auto;
